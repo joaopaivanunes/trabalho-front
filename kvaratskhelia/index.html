@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal - [Seu Nome]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🧑‍💻 Olá, eu sou João Nunes!</h1>
+        <nav>
+            <a href="#sobre">Sobre Mim</a>
+            <a href="#interesses">Interesses</a>
+            <a href="#hobbies">Hobbies & Fotos</a>
+            <button id="btn-tema" class="btn-tema">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre" class="cartao">
+            <h2>Sobre Mim</h2>
+            <p>Sou estudante do Colégio Francisco Lima, atualmente estou cursando o 2 ano de desenvolvimento de sistemas, amo tecnologia e sou apaixonado por futebol e jogos.</p>
+        </section>
+
+        <section id="interesses" class="cartao">
+            <h2>Meus Interesses 🚀</h2>
+            <ul class="lista-interesses">
+                <li>💻 Programação</li>
+                <li>🎮 Jogos</li>
+                <li>⚽ Futebol</li>
+                <li>🏋🏻‍♂️ Academia</li>
+            </ul>
+        </section>
+
+        <section id="hobbies" class="cartao">
+            <h2>Meus Hobbies & Fotos 📸</h2>
+            <p>durmo, jogo bola, sou lindo e tmj</p>
+            <div class="galeria-imagens">
+                <img src="https://i.pinimg.com/474x/25/b6/04/25b604a3593661ffbdca55b5b0b3a738.jpg" alt="Minha foto de perfil">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Conecte-se comigo no <a href="https://www.linkedin.com/in/seu-perfil" target="_blank">LinkedIn</a> 🌐</p>
+        <p>&copy; 2026 - Desenvolvido por [João Nunes]</p>
+    </footer>
+
+    <script>
+        const btnTema = document.getElementById('btn-tema');
+        
+        btnTema.addEventListener('click', () => {
+            // Liga/Desliga a classe 'dark-mode' no corpo da página
+            document.body.classList.toggle('dark-mode');
+            
+            // Altera o texto do botão para combinar com o estado atual
+            if (document.body.classList.contains('dark-mode')) {
+                btnTema.textContent = '☀️ Modo Claro';
+            } else {
+                btnTema.textContent = '🌙 Modo Escuro';
+            }
+        });
+    </script>
+</body>
+</html>
